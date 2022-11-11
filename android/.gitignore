@@ -1,1 +1,29 @@
 /build
+
+Raw Blame
+
+ 
+dist/
+node_modules/
+sensitive/
+
+Pods
+Build
+*.iml
+.idea
+.DS_Store
+
+package-lock.json
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+*.xcworkspace/
+project.xcworkspace/
+xcuserdata/
+
+# Podfiles
+Pods/
