@@ -55,7 +55,7 @@ Retrieve enabling google play services request result
 requestEnableGooglePlayServicesWithMessage(requestDialog: RequestDialog) => Promise<{ success: boolean; }>
 ```
 
-Display a dialog with a message before enabling google play services request and retrieve the result
+Display a dialog with a message before displaying enabling google play services request and retrieve the result
 
 | Param               | Type                                                    |
 | ------------------- | ------------------------------------------------------- |
@@ -71,9 +71,9 @@ Display a dialog with a message before enabling google play services request and
 
 #### RequestDialog
 
-| Prop           | Type                | Description                                                                                |
-| -------------- | ------------------- | ------------------------------------------------------------------------------------------ |
-| **`message`**  | <code>string</code> | Message displayed in the dialog before displaying requesting enabling google play services |
-| **`btnLabel`** | <code>string</code> | Label of the button in the dialog                                                          |
+| Prop           | Type                | Description                                                                             |
+| -------------- | ------------------- | --------------------------------------------------------------------------------------- |
+| **`message`**  | <code>string</code> | Message displayed in the dialog before displaying enabling google play services request |
+| **`btnLabel`** | <code>string</code> | Label of the button in the dialog                                                       |
 
 </docgen-api>
