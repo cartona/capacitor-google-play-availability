@@ -6,7 +6,6 @@ export class GooglePlayServicesWeb
   extends WebPlugin
   implements GooglePlayServicesPlugin
 {
-
   constructor() {
     super({
       name: 'GooglePlayServices',
@@ -18,7 +17,9 @@ export class GooglePlayServicesWeb
     throw this.unimplemented('Not implemented on web.');
   }
 
-  async requestEnableGooglePlayServicesWithMessage(_requestAlert: RequestAlert): Promise<{ success: boolean }> {
+  async requestEnableGooglePlayServicesWithMessage(
+    _requestAlert: RequestAlert,
+  ): Promise<{ success: boolean }> {
     throw this.unimplemented('Not implemented on web.');
   }
 
