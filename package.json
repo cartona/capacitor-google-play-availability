@@ -2,7 +2,7 @@
   "name": "@cartona/capacitor-google-play-services",
   "version": "0.0.1",
   "description": "a capacitor plugin which allows to check for google play services availability and making it enabled",
-  "main": "dist/plugin.cjs.js",
+  "main": "dist/esm/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
   "unpkg": "dist/plugin.js",
