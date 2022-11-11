@@ -29,6 +29,8 @@ npx cap sync
 checkGooglePlayServicesAvailability() => Promise<{ enabled: boolean; }>
 ```
 
+Retrieve google play services availability status
+
 **Returns:** <code>Promise&lt;{ enabled: boolean; }&gt;</code>
 
 --------------------
@@ -40,6 +42,8 @@ checkGooglePlayServicesAvailability() => Promise<{ enabled: boolean; }>
 requestEnableGooglePlayServices() => Promise<{ success: boolean; }>
 ```
 
+Retrieve enabling google play services request result
+
 **Returns:** <code>Promise&lt;{ success: boolean; }&gt;</code>
 
 --------------------
@@ -48,12 +52,14 @@ requestEnableGooglePlayServices() => Promise<{ success: boolean; }>
 ### requestEnableGooglePlayServicesWithMessage(...)
 
 ```typescript
-requestEnableGooglePlayServicesWithMessage(requestAlert: RequestAlert) => Promise<{ success: boolean; }>
+requestEnableGooglePlayServicesWithMessage(requestDialog: RequestDialog) => Promise<{ success: boolean; }>
 ```
 
-| Param              | Type                                                  |
-| ------------------ | ----------------------------------------------------- |
-| **`requestAlert`** | <code><a href="#requestalert">RequestAlert</a></code> |
+Display a dialog with a message before enabling google play services request and retrieve the result
+
+| Param               | Type                                                    |
+| ------------------- | ------------------------------------------------------- |
+| **`requestDialog`** | <code><a href="#requestdialog">RequestDialog</a></code> |
 
 **Returns:** <code>Promise&lt;{ success: boolean; }&gt;</code>
 
@@ -63,11 +69,11 @@ requestEnableGooglePlayServicesWithMessage(requestAlert: RequestAlert) => Promis
 ### Interfaces
 
 
-#### RequestAlert
+#### RequestDialog
 
-| Prop           | Type                |
-| -------------- | ------------------- |
-| **`message`**  | <code>string</code> |
-| **`btnLabel`** | <code>string</code> |
+| Prop           | Type                | Description                                                                                |
+| -------------- | ------------------- | ------------------------------------------------------------------------------------------ |
+| **`message`**  | <code>string</code> | Message displayed in the dialog before displaying requesting enabling google play services |
+| **`btnLabel`** | <code>string</code> | Label of the button in the dialog                                                          |
 
 </docgen-api>
