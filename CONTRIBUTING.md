@@ -13,12 +13,6 @@ This guide provides instructions for contributing to this Capacitor plugin.
     npm install
     ```
 
-1. Install SwiftLint if you're on macOS.
-
-    ```shell
-    brew install swiftlint
-    ```
-
 ### Scripts
 
 #### `npm run build`
