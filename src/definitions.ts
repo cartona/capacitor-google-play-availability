@@ -8,7 +8,7 @@ export interface GooglePlayServicesPlugin {
    */
   requestEnableGooglePlayServices(): Promise<{ success: boolean }>;
   /**
-   * Display a dialog with a message before enabling google play services request and retrieve the result
+   * Display a dialog with a message before displaying enabling google play services request and retrieve the result
    */
   requestEnableGooglePlayServicesWithMessage(
     requestDialog: RequestDialog,
