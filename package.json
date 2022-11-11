@@ -1,5 +1,5 @@
 {
-  "name": "capacitor-google-play-services",
+  "name": "@cartona/capacitor-google-play-services",
   "version": "0.0.1",
   "description": "a capacitor plugin which allows to check for google play services availability and making it enabled",
   "main": "dist/plugin.cjs.js",
@@ -9,9 +9,7 @@
   "files": [
     "android/src/main/",
     "android/build.gradle",
-    "dist/",
-    "ios/Plugin/",
-    "CapacitorGooglePlayServices.podspec"
+    "dist/"
   ],
   "author": "ramikhafagi96",
   "license": "MIT",
