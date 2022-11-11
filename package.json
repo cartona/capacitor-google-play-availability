@@ -13,6 +13,7 @@
   ],
   "author": "ramikhafagi96",
   "license": "MIT",
+  "homepage": "https://github.com/cartona/capacitor-google-play-services#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cartona/capacitor-google-play-services.git"
