@@ -1,6 +1,6 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { GooglePlayServicesPlugin, RequestAlert } from './definitions';
+import type { GooglePlayServicesPlugin, RequestDialog } from './definitions';
 
 export class GooglePlayServicesWeb
   extends WebPlugin
@@ -18,7 +18,7 @@ export class GooglePlayServicesWeb
   }
 
   async requestEnableGooglePlayServicesWithMessage(
-    _requestAlert: RequestAlert,
+    _requestAlert: RequestDialog,
   ): Promise<{ success: boolean }> {
     throw this.unimplemented('Not implemented on web.');
   }
