@@ -17,7 +17,7 @@ export interface GooglePlayServicesPlugin {
 
 export interface RequestDialog {
   /**
-   * Message displayed in the dialog before displaying requesting enabling google play services
+   * Message displayed in the dialog before displaying enabling google play services request
    */
   message: string;
   /**
