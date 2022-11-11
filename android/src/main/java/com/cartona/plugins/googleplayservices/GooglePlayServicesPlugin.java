@@ -26,7 +26,7 @@ public class GooglePlayServicesPlugin extends Plugin {
         context = getContext();
     }
 
-    @PluginMethod
+    @PluginMethod()
     public void checkGooglePlayServicesAvailability(PluginCall call) {
         int status = googleApiAvailability.isGooglePlayServicesAvailable(activity);
         JSObject data = new JSObject();
@@ -38,7 +38,7 @@ public class GooglePlayServicesPlugin extends Plugin {
         call.resolve(data);
     }
 
-    @PluginMethod
+    @PluginMethod()
     public void requestEnableGooglePlayServicesWithMessage(PluginCall call) {
         String message = call.getString("message");
         String btnLabel = call.getString("btnLabel");
@@ -80,7 +80,7 @@ public class GooglePlayServicesPlugin extends Plugin {
         alert11.show();
     }
 
-    @PluginMethod
+    @PluginMethod()
     public void requestEnableGooglePlayServices(PluginCall call) {
         JSObject data = new JSObject();
         googleApiAvailability
