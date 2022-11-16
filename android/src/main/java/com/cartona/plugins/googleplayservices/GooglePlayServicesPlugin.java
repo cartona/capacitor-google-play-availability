@@ -82,20 +82,27 @@ public class GooglePlayServicesPlugin extends Plugin {
 
     @PluginMethod()
     public void requestEnableGooglePlayServices(PluginCall call) {
-        JSObject data = new JSObject();
-        googleApiAvailability
-            .makeGooglePlayServicesAvailable(activity)
-            .addOnSuccessListener(
-                avoid -> {
-                    data.put("success", true);
-                    call.resolve(data);
-                }
-            )
-            .addOnFailureListener(
-                avoid -> {
-                    data.put("success", false);
-                    call.resolve(data);
-                }
-            );
+        activity.runOnUiThread(
+            new Runnable() {
+              @Override
+              public void run() {
+                JSObject data = new JSObject();
+                googleApiAvailability
+                  .makeGooglePlayServicesAvailable(activity)
+                  .addOnSuccessListener(
+                    avoid -> {
+                      data.put("success", true);
+                      call.resolve(data);
+                    }
+                  )
+                  .addOnFailureListener(
+                    avoid -> {
+                      data.put("success", false);
+                      call.resolve(data);
+                    }
+                  );
+              }
+            }
+          );
     }
 }
