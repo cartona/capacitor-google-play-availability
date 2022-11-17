@@ -13,67 +13,37 @@ npx cap sync
 
 <docgen-index>
 
-* [`checkGooglePlayServicesAvailability()`](#checkgoogleplayservicesavailability)
-* [`requestEnableGooglePlayServices()`](#requestenablegoogleplayservices)
-* [`requestEnableGooglePlayServicesWithMessage(...)`](#requestenablegoogleplayserviceswithmessage)
-* [Interfaces](#interfaces)
+* [`isGooglePlayServicesAvailable()`](#isgoogleplayservicesavailable)
+* [`makeGooglePlayServicesAvailable()`](#makegoogleplayservicesavailable)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### checkGooglePlayServicesAvailability()
+### isGooglePlayServicesAvailable()
 
 ```typescript
-checkGooglePlayServicesAvailability() => Promise<{ enabled: boolean; }>
+isGooglePlayServicesAvailable() => Promise<{ available: boolean; }>
 ```
 
 Retrieve google play services availability status
 
+**Returns:** <code>Promise&lt;{ available: boolean; }&gt;</code>
+
+--------------------
+
+
+### makeGooglePlayServicesAvailable()
+
+```typescript
+makeGooglePlayServicesAvailable() => Promise<{ enabled: boolean; }>
+```
+
+Retrieve enabling google play services available request result
+
 **Returns:** <code>Promise&lt;{ enabled: boolean; }&gt;</code>
 
 --------------------
-
-
-### requestEnableGooglePlayServices()
-
-```typescript
-requestEnableGooglePlayServices() => Promise<{ success: boolean; }>
-```
-
-Retrieve enabling google play services request result
-
-**Returns:** <code>Promise&lt;{ success: boolean; }&gt;</code>
-
---------------------
-
-
-### requestEnableGooglePlayServicesWithMessage(...)
-
-```typescript
-requestEnableGooglePlayServicesWithMessage(requestDialog: RequestDialog) => Promise<{ success: boolean; }>
-```
-
-Display a dialog with a message before displaying enabling google play services request and retrieve the result
-
-| Param               | Type                                                    |
-| ------------------- | ------------------------------------------------------- |
-| **`requestDialog`** | <code><a href="#requestdialog">RequestDialog</a></code> |
-
-**Returns:** <code>Promise&lt;{ success: boolean; }&gt;</code>
-
---------------------
-
-
-### Interfaces
-
-
-#### RequestDialog
-
-| Prop           | Type                | Description                                                                             |
-| -------------- | ------------------- | --------------------------------------------------------------------------------------- |
-| **`message`**  | <code>string</code> | Message displayed in the dialog before displaying enabling google play services request |
-| **`btnLabel`** | <code>string</code> | Label of the button in the dialog                                                       |
 
 </docgen-api>

@@ -27,61 +27,19 @@ public class GooglePlayServicesPlugin extends Plugin {
     }
 
     @PluginMethod()
-    public void checkGooglePlayServicesAvailability(PluginCall call) {
+    public void isGooglePlayServicesAvailable(PluginCall call) {
         int status = googleApiAvailability.isGooglePlayServicesAvailable(activity);
         JSObject data = new JSObject();
         if (status != ConnectionResult.SUCCESS) {
-            data.put("enabled", false);
+            data.put("available", false);
             call.resolve(data);
         }
-        data.put("enabled", true);
+        data.put("available", true);
         call.resolve(data);
     }
 
     @PluginMethod()
-    public void requestEnableGooglePlayServicesWithMessage(PluginCall call) {
-        String message = call.getString("message");
-        String btnLabel = call.getString("btnLabel");
-        AlertDialog.Builder builder = new AlertDialog.Builder(context);
-        builder.setMessage(message);
-        builder.setCancelable(false);
-        builder.setPositiveButton(
-            btnLabel,
-            new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int id) {
-                    dialog.cancel();
-                    activity.runOnUiThread(
-                        new Runnable() {
-                            @Override
-                            public void run() {
-                                JSObject data = new JSObject();
-                                googleApiAvailability
-                                    .makeGooglePlayServicesAvailable(activity)
-                                    .addOnSuccessListener(
-                                        avoid -> {
-                                            data.put("success", true);
-                                            call.resolve(data);
-                                        }
-                                    )
-                                    .addOnFailureListener(
-                                        avoid -> {
-                                            data.put("success", false);
-                                            call.resolve(data);
-                                        }
-                                    );
-                            }
-                        }
-                    );
-                }
-            }
-        );
-
-        AlertDialog alert11 = builder.create();
-        alert11.show();
-    }
-
-    @PluginMethod()
-    public void requestEnableGooglePlayServices(PluginCall call) {
+    public void makeGooglePlayServicesAvailable(PluginCall call) {
         activity.runOnUiThread(
             new Runnable() {
               @Override
@@ -91,13 +49,13 @@ public class GooglePlayServicesPlugin extends Plugin {
                   .makeGooglePlayServicesAvailable(activity)
                   .addOnSuccessListener(
                     avoid -> {
-                      data.put("success", true);
+                      data.put("enabled", true);
                       call.resolve(data);
                     }
                   )
                   .addOnFailureListener(
                     avoid -> {
-                      data.put("success", false);
+                      data.put("enabled", false);
                       call.resolve(data);
                     }
                   );

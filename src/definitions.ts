@@ -2,26 +2,9 @@ export interface GooglePlayServicesPlugin {
   /**
    * Retrieve google play services availability status
    */
-  checkGooglePlayServicesAvailability(): Promise<{ enabled: boolean }>;
+   isGooglePlayServicesAvailable(): Promise<{ available: boolean }>;
   /**
-   * Retrieve enabling google play services request result
+   * Retrieve enabling google play services available request result
    */
-  requestEnableGooglePlayServices(): Promise<{ success: boolean }>;
-  /**
-   * Display a dialog with a message before displaying enabling google play services request and retrieve the result
-   */
-  requestEnableGooglePlayServicesWithMessage(
-    requestDialog: RequestDialog,
-  ): Promise<{ success: boolean }>;
-}
-
-export interface RequestDialog {
-  /**
-   * Message displayed in the dialog before displaying enabling google play services request
-   */
-  message: string;
-  /**
-   * Label of the button in the dialog
-   */
-  btnLabel: string;
+   makeGooglePlayServicesAvailable(): Promise<{ enabled: boolean }>;
 }

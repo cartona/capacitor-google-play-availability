@@ -1,6 +1,6 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { GooglePlayServicesPlugin, RequestDialog } from './definitions';
+import type { GooglePlayServicesPlugin } from './definitions';
 
 export class GooglePlayServicesWeb
   extends WebPlugin
@@ -13,17 +13,11 @@ export class GooglePlayServicesWeb
     });
   }
 
-  async checkGooglePlayServicesAvailability(): Promise<{ enabled: boolean }> {
+  async isGooglePlayServicesAvailable(): Promise<{ available: boolean }> {
     throw this.unimplemented('Not implemented on web.');
   }
 
-  async requestEnableGooglePlayServicesWithMessage(
-    _requestAlert: RequestDialog,
-  ): Promise<{ success: boolean }> {
-    throw this.unimplemented('Not implemented on web.');
-  }
-
-  async requestEnableGooglePlayServices(): Promise<{ success: boolean }> {
+  async makeGooglePlayServicesAvailable(): Promise<{ enabled: boolean }> {
     throw this.unimplemented('Not implemented on web.');
   }
 }

@@ -1,7 +1,7 @@
 {
-  "name": "@cartona/capacitor-google-play-services",
+  "name": "@cartona/capacitor-google-play-availability",
   "version": "1.0.0",
-  "description": "a capacitor plugin which allows to check for google play services availability and making it enabled",
+  "description": "A capacitor plugin which is a wrapper for google play availability api that allows to check for google play services availability and enabling it if it's available",
   "main": "dist/esm/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -25,7 +25,8 @@
     "capacitor",
     "plugin",
     "native",
-    "google play services"
+    "google play services",
+    "google play availability"
   ],
   "scripts": {
     "verify": "npm run verify:ios && npm run verify:android && npm run verify:web",

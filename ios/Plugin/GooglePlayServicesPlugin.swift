@@ -8,15 +8,11 @@ import Capacitor
 @objc(GooglePlayServicesPlugin)
 public class GooglePlayServicesPlugin: CAPPlugin {
 
-    @objc func checkGooglePlayServicesAvailability(_ call: CAPPluginCall) {
+    @objc func isGooglePlayServicesAvailable(_ call: CAPPluginCall) {
         call.unimplemented()
     }
 
-    @objc func requestEnableGooglePlayServices(_ call: CAPPluginCall) {
-        call.unimplemented()
-    }
-
-    @objc func requestEnableGooglePlayServicesWithMessage(_ call: CAPPluginCall) {
+    @objc func makeGooglePlayServicesAvailable(_ call: CAPPluginCall) {
         call.unimplemented()
     }
 }
