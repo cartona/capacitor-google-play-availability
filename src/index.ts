@@ -1,13 +1,13 @@
 import { registerPlugin } from '@capacitor/core';
 
-import type { GooglePlayServicesPlugin } from './definitions';
+import type { GooglePlayAvailabilityPlugin } from './definitions';
 
-const GooglePlayServices = registerPlugin<GooglePlayServicesPlugin>(
-  'GooglePlayServices',
+const GooglePlayAvailability = registerPlugin<GooglePlayAvailabilityPlugin>(
+  'GooglePlayAvailability',
   {
-    web: () => import('./web').then(m => new m.GooglePlayServicesWeb()),
+    web: () => import('./web').then(m => new m.GooglePlayAvailabilityWeb()),
   },
 );
 
 export * from './definitions';
-export { GooglePlayServices };
+export { GooglePlayAvailability };

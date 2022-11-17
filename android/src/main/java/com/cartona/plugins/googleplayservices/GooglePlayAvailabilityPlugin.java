@@ -1,4 +1,4 @@
-package com.cartona.plugins.googleplayservices;
+package com.cartona.plugins.GooglePlayAvailability;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,8 +13,8 @@ import com.getcapacitor.annotation.CapacitorPlugin;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 
-@CapacitorPlugin(name = "GooglePlayServices")
-public class GooglePlayServicesPlugin extends Plugin {
+@CapacitorPlugin(name = "GooglePlayAvailability")
+public class GooglePlayAvailabilityPlugin extends Plugin {
 
     Activity activity;
     Context context;

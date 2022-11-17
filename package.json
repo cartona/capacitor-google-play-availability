@@ -13,13 +13,13 @@
   ],
   "author": "Rami Khafagi",
   "license": "MIT",
-  "homepage": "https://github.com/cartona/capacitor-google-play-services#readme",
+  "homepage": "https://github.com/cartona/capacitor-google-play-availability#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cartona/capacitor-google-play-services.git"
+    "url": "git+https://github.com/cartona/capacitor-google-play-availability.git"
   },
   "bugs": {
-    "url": "https://github.com/cartona/capacitor-google-play-services/issues"
+    "url": "https://github.com/cartona/capacitor-google-play-availability/issues"
   },
   "keywords": [
     "capacitor",
@@ -38,7 +38,7 @@
     "eslint": "eslint . --ext ts",
     "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
     "swiftlint": "node-swiftlint",
-    "docgen": "docgen --api GooglePlayServicesPlugin --output-readme README.md --output-json dist/docs.json",
+    "docgen": "docgen --api GooglePlayAvailabilityPlugin --output-readme README.md --output-json dist/docs.json",
     "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.js",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",

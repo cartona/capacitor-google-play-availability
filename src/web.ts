@@ -1,14 +1,14 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { GooglePlayServicesPlugin } from './definitions';
+import type { GooglePlayAvailabilityPlugin } from './definitions';
 
-export class GooglePlayServicesWeb
+export class GooglePlayAvailabilityWeb
   extends WebPlugin
-  implements GooglePlayServicesPlugin
+  implements GooglePlayAvailabilityPlugin
 {
   constructor() {
     super({
-      name: 'GooglePlayServices',
+      name: 'GooglePlayAvailability',
       platforms: ['web'],
     });
   }
@@ -22,6 +22,6 @@ export class GooglePlayServicesWeb
   }
 }
 
-const GooglePlayServices = new GooglePlayServicesWeb();
+const GooglePlayAvailability = new GooglePlayAvailabilityWeb();
 
-export { GooglePlayServices };
+export { GooglePlayAvailability };

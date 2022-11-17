@@ -4,7 +4,7 @@ export default {
     {
       file: 'dist/plugin.js',
       format: 'iife',
-      name: 'capacitorGooglePlayServices',
+      name: 'capacitorGooglePlayAvailability',
       globals: {
         '@capacitor/core': 'capacitorExports',
       },

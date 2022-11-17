@@ -1,4 +1,4 @@
-export interface GooglePlayServicesPlugin {
+export interface GooglePlayAvailabilityPlugin {
   /**
    * Retrieve google play services availability status
    */
