@@ -1,11 +1,11 @@
-# capacitor-google-play-services
+# capacitor-google-play-availability
 
-a capacitor plugin which allows to check for google play services availability and making it enabled
+A capacitor plugin which is a wrapper for google play availability api that allows to check for google play services availability and enabling it if it's available
 
 ## Install
 
 ```bash
-npm install capacitor-google-play-services
+npm install capacitor-google-play-availability
 npx cap sync
 ```
 
