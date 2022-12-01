@@ -9,6 +9,8 @@
   "files": [
     "android/src/main/",
     "android/build.gradle",
+    "ios/Plugin",
+    "CartonaCapacitorGooglePlayAvailability.podspec",
     "dist/"
   ],
   "author": "Rami Khafagi",
