@@ -2,6 +2,16 @@
 
 A capacitor plugin which is a wrapper for google play availability api that allows to check for google play services availability and enabling it if it's available
 
+<p align="center">
+  <img src="https://img.shields.io/maintenance/yes/2022?style=flat-square" />
+  <a href="https://www.npmjs.com/package/@cartona/capacitor-google-play-availability"><img src="https://img.shields.io/npm/l/@cartona/capacitor-google-play-availability?style=flat-square" /></a>
+<br>
+  <a href="https://www.npmjs.com/package/@cartona/capacitor-google-play-availability"><img src="https://img.shields.io/npm/dw/@cartona/capacitor-google-play-availability?style=flat-square" /></a>
+  <a href="https://www.npmjs.com/package/@cartona/capacitor-google-play-availability"><img src="https://img.shields.io/npm/v/@cartona/capacitor-google-play-availability?style=flat-square" /></a>
+  <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+<a href="#contributors"><img src="https://img.shields.io/badge/all%20contributors-1-orange?style=flat-square" /></a>
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 ## Install
 
 ```bash
