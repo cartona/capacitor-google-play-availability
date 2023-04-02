@@ -3,7 +3,7 @@
 A capacitor plugin which is a wrapper for google play availability api that allows to check for google play services availability and enabling it if it's available
 
 <p align="center">
-  <img src="https://img.shields.io/maintenance/yes/2022?style=flat-square" />
+  <img src="https://img.shields.io/maintenance/yes/2023?style=flat-square" />
   <a href="https://www.npmjs.com/package/@cartona/capacitor-google-play-availability"><img src="https://img.shields.io/npm/l/@cartona/capacitor-google-play-availability?style=flat-square" /></a>
 <br>
   <a href="https://www.npmjs.com/package/@cartona/capacitor-google-play-availability"><img src="https://img.shields.io/npm/dw/@cartona/capacitor-google-play-availability?style=flat-square" /></a>
