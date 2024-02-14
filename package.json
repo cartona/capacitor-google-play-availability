@@ -1,6 +1,6 @@
 {
   "name": "@cartona/capacitor-google-play-availability",
-  "version": "1.0.2",
+  "version": "1.1.0-beta",
   "description": "A capacitor plugin which is a wrapper for google play availability api that allows to check for google play services availability and enabling it if it's available",
   "main": "dist/esm/index.js",
   "module": "dist/esm/index.js",
